@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-post-list',
   templateUrl: './post-list.component.html',
-  styleUrls: ['./post-list.component.css']
+  styleUrls: ['./post-list.component.css'],
+  animations: [
+    trigger('fadeInOut', [
+      state('void', style({ opacity: 0 })),
+      transition('void <=> *', animate(300)),
+    ]),
+  ],
 })
 export class PostListComponent {
   posts = [
@@ -11,13 +18,85 @@ export class PostListComponent {
       title: 'Meu primeiro post',
       content: 'Este é o conteúdo do meu primeiro post...',
       date: '2023-06-01',
-      author: 'João'
+      author: 'João',
+      image: 'assets/image/post1.png'
     },
     {
       title: 'Outro post interessante',
       content: 'Este é o conteúdo de outro post...',
       date: '2023-06-05',
-      author: 'Maria'
+      author: 'Maria',
+      image: 'assets/image/post1.png'
+    },
+    {
+      title: 'Darth Varder ataca novamente',
+      content: 'Este é o conteúdo de outro post...',
+      date: '2023-06-05',
+      author: 'Maria',
+      image: 'assets/image/post1.png'
+    },
+    {
+      title: 'Darth Varder ataca novamente',
+      content: 'Este é o conteúdo de outro post...',
+      date: '2023-06-05',
+      author: 'Maria',
+      image: 'assets/image/post1.png'
+    },
+    {
+      title: 'Darth Varder ataca novamente',
+      content: 'Este é o conteúdo de outro post...',
+      date: '2023-06-05',
+      author: 'Maria',
+      image: 'assets/image/post1.png'
+    },
+    {
+      title: 'Darth Varder ataca novamente',
+      content: 'Este é o conteúdo de outro post...',
+      date: '2023-06-05',
+      author: 'Maria',
+      image: 'assets/image/post1.png'
+    },
+    {
+      title: 'Darth Varder ataca novamente',
+      content: 'Este é o conteúdo de outro post...',
+      date: '2023-06-05',
+      author: 'Maria',
+      image: 'assets/image/post1.png'
+    },
+    {
+      title: 'Darth Varder ataca novamente',
+      content: 'Este é o conteúdo de outro post...',
+      date: '2023-06-05',
+      author: 'Maria',
+      image: 'assets/image/post1.png'
+    },
+    {
+      title: 'Darth Varder ataca novamente',
+      content: 'Este é o conteúdo de outro post...',
+      date: '2023-06-05',
+      author: 'Maria',
+      image: 'assets/image/post1.png'
+    },
+    {
+      title: 'Darth Varder ataca novamente',
+      content: 'Este é o conteúdo de outro post...',
+      date: '2023-06-05',
+      author: 'Maria',
+      image: 'assets/image/post1.png'
+    },
+    {
+      title: 'Darth Varder ataca novamente',
+      content: 'Este é o conteúdo de outro post...',
+      date: '2023-06-05',
+      author: 'Maria',
+      image: 'assets/image/post1.png'
+    },
+    {
+      title: 'Darth Varder ataca novamente',
+      content: 'Este é o conteúdo de outro post...',
+      date: '2023-06-05',
+      author: 'Maria',
+      image: 'assets/image/post1.png'
     }
   ];
 }

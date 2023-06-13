@@ -1,0 +1,34 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-content {
+  min-height: calc(100% - 60px); /* Substitua 60px pela altura da sua navbar */
+}
+
+.blog-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-footer p {
+  margin: 0;
+}
+
+.blog-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog-footer a:hover {
+  text-decoration: underline;
+}
