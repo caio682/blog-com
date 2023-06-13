@@ -1,0 +1,7 @@
+<div class="post-container" *ngFor="let post of posts" [@fadeInOut]>
+    <h2 class="post-title">{{ post.title }}</h2>
+    <p class="post-content">{{ post.content }}</p>
+    <small class="post-details">Publicado em: {{ post.date }} por {{ post.author }}</small>
+    <hr>
+  </div>
+  
